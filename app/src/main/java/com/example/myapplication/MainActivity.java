@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 /**
  * @author Qiman Gao
- * @version 3.0
+ * @version 1.0
  */
 public class MainActivity extends AppCompatActivity {
     /** This holds the text at the center of the screens*/

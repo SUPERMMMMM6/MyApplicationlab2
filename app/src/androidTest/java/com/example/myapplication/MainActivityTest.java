@@ -71,7 +71,7 @@ public class MainActivityTest {
         textView.check(matches(withText("You shall not pass!")));
     }
     /**
-     * this is a test to find missing numbers
+     * this is a test to find missing number
      */
     @Test
     public void TestFindMissingNumber() {
@@ -87,7 +87,7 @@ public class MainActivityTest {
         textView.check(matches(withText("You shall not pass!")));
     }
     /**
-     * this is a test to find missing special char
+     * this is a test to find missing special chars
      */
     @Test
     public void TestFindMissingChar() {
@@ -103,7 +103,7 @@ public class MainActivityTest {
         textView.check(matches(withText("You shall not pass!")));
     }
     /**
-     * this is a test that meets all requirements
+     * this is a test that meet all requirements
      */
     @Test
     public void TestFindMissing() {
