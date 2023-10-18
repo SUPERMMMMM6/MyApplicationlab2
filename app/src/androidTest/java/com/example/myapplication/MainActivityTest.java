@@ -1,4 +1,4 @@
-package com.example.myapplicationlab;
+package com.example.myapplication;
 
 
 import androidx.test.espresso.ViewInteraction;
@@ -16,9 +16,6 @@ import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.*;
 import static androidx.test.espresso.assertion.ViewAssertions.*;
 import static androidx.test.espresso.matcher.ViewMatchers.*;
-
-import com.example.myapplication.MainActivity;
-import com.example.myapplication.R;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
