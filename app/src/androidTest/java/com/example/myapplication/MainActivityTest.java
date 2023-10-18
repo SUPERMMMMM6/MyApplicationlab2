@@ -102,7 +102,22 @@ public class MainActivityTest {
         ViewInteraction textView = onView( (withId(R.id.textView)));
         textView.check(matches(withText("You shall not pass!")));
     }
+    /**
+     * this is a test that meet all requirements
+     */
+    @Test
+    public void TestFindMissing() {
+        ViewInteraction appCompatEditText = onView( (withId(R.id.editText)));
 
+        appCompatEditText.perform(replaceText("Password123!"), closeSoftKeyboard());
+
+
+        ViewInteraction materialButton = onView((withId(R.id.button)));
+        materialButton.perform(click());
+
+        ViewInteraction textView = onView( (withId(R.id.textView)));
+        textView.check(matches(withText("Your password meets the requirements")));
+    }
     private static Matcher<View> childAtPosition(
             final Matcher<View> parentMatcher, final int position) {
 
