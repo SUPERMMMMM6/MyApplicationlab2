@@ -28,3 +28,23 @@ import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
+
+@LargeTest
+@RunWith(AndroidJUnit4.class)
+public class MainActivityTest {
+
+    @Rule
+    public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
+            new ActivityScenarioRule<>(MainActivity.class);
+
+
+    @RunWith(AndroidJUnit4.class)
+    public static class ExampleInstrumentedTest {
+        @Test
+        public void useAppContext() {
+            // Context of the app under test.
+            Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+            assertEquals("com.example.myapplication", appContext.getPackageName());
+        }
+    }
+}
